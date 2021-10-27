@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Fast Axiomatic Attribution for Neural Networks</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Page content-->
+        <div class="container">
+            <div class="text-center mt-5">
+                <br>
+                <hr class="title-top">
+                <h1>Fast Axiomatic Attribution for Neural Networks</h1>
+                <hr class="title-bottom">
+                <br>
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-3">
+                        <a class="author" href="https://robinhesse.github.io/" target= "_blank">Robin Hesse</a><sup class="author-sub">1</sup>
+                    </div>
+                    <div class="col-md-auto">
+                        <a class="author" href="https://schaubsi.github.io" target= "_blank">Simone Schaub-Meyer</a><sup class="author-sub">1</sup>
+                    </div>
+                    <div class="col col-lg-3">
+                        <a class="author" href="https://www.visinf.tu-darmstadt.de/visinf/team_members/sroth/sroth.en.jsp" target= "_blank">Stefan Roth</a><sup class="author-sub">1,2</sup>
+                    </div>
+                </div>
+
+                <p class="institution"><sup>1</sup>Department of Computer Science, TU Darmstadt &nbsp &nbsp <sup>2</sup>hessian.AI</p>
+
+                <p class="conference">NeurIPS 2021</p>
+                <p class="quicklinks"><a href="#!" target= "_blank">Open Access</a> | <a href="#!" target= "_blank">Preprint</a> | <a href="https://github.com/visinf/fast-axiomatic-attribution" target= "_blank">Code</a></p>
+                <br>
+                <img src="assets/homogeneity.pdf" class="img-fluid" style="width: 60%;" alt="Responsive image">
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="container">
+            <p class="meta">
+                <b class="p-title">Keywords:</b> deep learning, interpretability, attributions, explanations, attribution priors
+            </p>
+            <p class="meta">
+                <b class="p-title">TL;DR:</b> For various ReLU DNNs without bias-terms, we show that axiomatic feature attributions from Integrated Gradients can be computed efficiently in closed form. 
+            </p>
+            <p class="abstract">
+                <b class="p-title">Abstract:</b> Mitigating the dependence on spurious correlations present in the training dataset is a quickly emerging and important topic of deep learning. 
+                Recent approaches include priors on the feature attribution of a deep neural network (DNN) into the training process to reduce the dependence on unwanted features. 
+                However, until now one needed to trade off high-quality attributions, satisfying desirable axioms, against the time required to compute them. 
+                This in turn either led to long training times or ineffective attribution priors. 
+                In this work, we break this trade-off by considering a special class of <i>efficiently axiomatically attributable DNNs</i> for which an axiomatic feature attribution can be computed with only a single forward/backward pass. 
+                We formally prove that <i>nonnegatively homogeneous DNNs</i>, here termed <i>&Xscr;-DNNs</i>, are efficiently axiomatically attributable and show that they can be effortlessly constructed from a wide range of regular DNNs by simply removing the bias term of each layer. 
+                Various experiments demonstrate the advantages of &Xscr;-DNNs, beating state-of-the-art generic attribution methods on regular DNNs for training with attribution priors.
+            </p>
+            <ul class="publication">
+                <li class="publication-inverted">
+                    <div class="publication-image"><img class="img-fluid" src="assets/paper_cover.png" alt="..." /></div>
+                    <div class="publication-panel">
+                        <div class="publication-heading">
+                            <h4 style="color: #bd5d38; margin-bottom: 10px;" >Paper</h4>
+                            <h4 class="subheading">R. Hesse, S. Schaub-Meyer, and S. Roth, “Fast axiomatic feature attribution for training neural networks with explanations,” in <i>Advances in Neural Information Processing Systems (NeurIPS)</i>, vol. 34, 2021, to appear.</h4>
+                        </div>
+                        <div class="publication-icons">
+                            <a class="publication-icon" href="#!" target= "_blank">Open Access</a>
+                            <a class="publication-icon" href="#!" target= "_blank">Preprint</a>
+                            <a class="publication-icon" href="https://github.com/visinf/fast-axiomatic-attribution" target= "_blank">Code</a>
+                            <a class="publication-icon" href="bibtex.txt" target= "_blank">Bibtex</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <br>
+            <br>
+
+        </div>
+        <hr class="m-0" />
+        <div class="container">
+            <div class="text-center mt-5">
+                <h2>NeurIPS Talk</h2>
+                <br></br>
+                <div class="text-content">
+                    <b>coming soon...</b>
+                <!--div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T36YDbo4dYU" allow="fullscreen"></iframe>
+                </div-->
+                </div>
+            </div>
+        </div>
+        <br></br>
+        <hr class="m-0" />
+        <div class="container">
+            <div class="text-center mt-5">
+                <h2>Take Home</h2>
+                <br></br>
+                <div class="text-content">
+                    <ul>
+                        <li class="reference">For nonnegatively homogeneous DNNs (&Xscr;-DNNs), Input &times; Gradient equals Integrated Gradients</li>
+                        <li class="reference">Removing the bias term from ReLU DNNs is one possible way to obtain &Xscr;-DNNs</li>
+                        <li class="reference">Use ￼&Xscr;-DNNs when you need efficiently computable axiomatic attributions</li>
+                        <li class="reference">Use ￼&Xscr;-DNNs for applications that require equivariance to contrast changes</li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+        </div>
+        <br></br>
+        <hr class="m-0" />
+        <div class="container">
+            <div class="text-center mt-5">
+                <h2>Related Work</h2>
+                <br></br>
+                <div class="text-content">
+                    <ul>
+                        <li class="reference">G. Erion, J. Janizek, P. Sturmfels, S. Lundberg and S. Lee, "Improving Performance of Deep Learning Models with Axiomatic Attribution Priors and Expected Gradients," in <i>Nature Machine Intelligence</i>, 2021</li>
+                        <li class="reference">A. Ross, M. Hughes, F. Doshi-Velez, "Right for the Right Reasons: Training Differentiable Models by Constraining their Explanations," in <i>International Joint Conferences on Artificial Intelligence (IJCAI)</i>, 2017</li>
+                        <li class="reference">A. Shrikumar, P. Greenside, A. Shcherbina, and A. Kundaje, "Not just a black box: Learning important features through propagating activation differences," <i>arXiv:1605.01713 [cs.LG]</i>, 2016.</li>
+                        <li class="reference">K. Simonyan, A. Vedaldi, and A. Zisserman, "Deep inside convolutional networks: Visualising image classification models and saliency maps," in <i>International Conference on Learning Representations (ICLR)</i>, 2014</li>
+                        <li class="reference">M. Sundararajan, A. Taly, and Q. Yan, "Axiomatic attribution for deep networks," in <i>International Conference on Machine Learning (ICML)</i>, 2017</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br></br>
+        <hr class="m-0" />
+        <div class="container">
+            <div class="text-center mt-5">
+                <h2>Disclosure of Funding</h2>
+                <br></br>
+                <div class="text-content">
+                        <p class="abstract">
+                            This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No. 866008). 
+                            The project has also been supported in part by the State of Hesse through the cluster projects "The Third Wave of Artificial Intelligence (3AI)" and "The Adaptive Mind (TAM)".
+                        </p>
+                        <img src="assets/LOGO_ERC-FLAG_EU_.jpg" class="img-fluid" style="width: 50%;" alt="Responsive image">
+                </div>
+
+                
+                
+            </div>
+        </div>
+        <footer class="footer py-4">
+            
+            <div class="container">
+                <div class="text-center mt-5 institution" >
+                
+                        Copyright &copy; Robin Hesse 2021
+
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
