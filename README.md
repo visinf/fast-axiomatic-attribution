@@ -1,4 +1,6 @@
 # Fast Axiomatic Attribution for Neural Networks
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+<img alt="PyTorch" height="20" src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?&style=for-the-badge&logo=PyTorch&logoColor=white" />
 
 This repository contains:
 - code to reproduce the main experiments in "Fast Axiomatic Attribution for Neural Networks" 
