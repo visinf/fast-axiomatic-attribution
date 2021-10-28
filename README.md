@@ -61,14 +61,16 @@ optimizer.zero_grad()
 loss.backward()
 optimizer.step()
 ```
+## Reproducing Experiments
 
+The code and a README with detailed instructions on how to reproduce the results from experiments in Sec 4.1, Sec 4.2, and Sec 4.4. of our paper can be found in the [imagenet](imagenet) folder. To reproduce the results from the experiment in Sec 4.3. please refer to the [sparsity](sparsity) folder.
 
 ## Reproducing Results from Experiments in Sec 4.1, Sec 4.2, and Sec 4.4. (imagenet)
 
 ### Prerequisites
 
 ### Training
-All the default hyperparameters in the code are set to the settings required to reproduce the results of our paper. We use a single NVIDIA A100 SXM4 40 GB GPU for training. To train your own models run the following commands.
+All the default hyperparameters in the code are set to the settings required to reproduce the results of our paper. We use a single NVIDIA A100 SXM4 40 GB GPU for training. To train your own models run the following commands. 
 
 X-AlexNet & X-VGG16:
 ```
