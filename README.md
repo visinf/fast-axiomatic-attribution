@@ -9,10 +9,9 @@ R. Hesse, S. Schaub-Meyer, and S. Roth. **Fast axiomatic attribution for neural 
 [Paper](https://visinf.github.io/fast-axiomatic-attribution/) | [Preprint](https://visinf.github.io/fast-axiomatic-attribution/) | [Project Page](https://visinf.github.io/fast-axiomatic-attribution/) | [Video](https://visinf.github.io/fast-axiomatic-attribution/)
 
 The repository contains:
-- PyTorch code to reproduce the main experiments in the paper
 - Pre-trained <img src="https://render.githubusercontent.com/render/math?math=\mathcal{X}">-DNN (X-DNN) variants of popular image classification models obtained by removing the bias term of each layer
 - Detailed information on how to easily compute axiomatic attributions in closed form for your own project
-
+- PyTorch code to reproduce the main experiments in the paper
 
 
 ## Pretrained Models
@@ -64,7 +63,7 @@ optimizer.step()
 ```
 
 
-## Reproducing Experiments from Sec 4.1, Sec 4.2, and Sec 4.4. (imagenet)
+## Reproducing Results from Experiments in Sec 4.1, Sec 4.2, and Sec 4.4. (imagenet)
 
 ### Prerequisites
 
@@ -102,11 +101,13 @@ python attribution_metrics.py   --model_type [model_type]\
                                 --data_root [path_to_imagenet]\ 
                                 --model_dict [path_to_trained_models]\
 ```
-`[model_type]` can be alexnet, xalexnet, vgg16, xvgg16, fixup_resnet50, or xfixup_resnet50
+`[model_type]` can be alexnet, xalexnet, vgg16, xvgg16, fixup_resnet50, or xfixup_resnet50.
 
-`[attr_method]` can be random, gradient, integrated_gradients128, input_x_gradient, or expected_gradients1
+`[attr_method]` can be random, gradient, integrated_gradients128, input_x_gradient, or expected_gradients1.
 
-## Reproducing Experiments from Sec 4.3. (sparsity)
+To visualize attributions run `visualize_attribution.ipnyb` (make sure to set the path for your model dictionary)
+
+## Reproducing Results from the Experiment in Sec 4.3. (sparsity)
 
 For training the models we use a single GeForce RTX 3090 GPU. To reproduce the results run:
 ```
