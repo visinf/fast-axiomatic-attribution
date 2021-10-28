@@ -65,6 +65,11 @@ optimizer.step()
 
 The code and a README with detailed instructions on how to reproduce the results from experiments in Sec 4.1, Sec 4.2, and Sec 4.4. of our paper can be found in the [imagenet](imagenet) folder. To reproduce the results from the experiment in Sec 4.3. please refer to the [sparsity](sparsity) folder.
 
+### Prerequisits
+- Set up conda environment: ```conda create --name <env> --file requirements.txt```
+- Clone the repository: ```git clone https://github.com/visinf/fast-axiomatic-attribution.git```
+- download [ImageNet](https://image-net.org/challenges/LSVRC/2012/) (ILSVRC2012)  
+
 ## Acknowledgment
 
 We would like to thank the contributors of the following repositories for using parts of their publicly available code:
