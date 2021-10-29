@@ -16,21 +16,25 @@ The repository contains:
 
 ## Pretrained Models
 
-Removing the bias from different image classification models has a surpringly minor impact on the accuracy of the models while allowing to efficiently compute axiomatic attributions. Results of popular models with and without bias term (Regular vs. X-) on the ImageNet validation split are:
+Removing the bias from different image classification models has a surpringly minor impact on the accuracy of the models while allowing to efficiently compute axiomatic attributions. Results of popular models with and without bias term (regular vs. X-) on the ImageNet validation split are:
 
-| Top-5 Accuracy| AlexNet | VGG16 | ResNet-50 |
-|-------------|---------|-------|-----------|
-| Regular DNN | 79.21   | 90.44 | 92.56     |
-| X-DNN       | 78.54   | 90.25 | 91.12     |
+| Model       | Top-5 Accuracy  | Download |
+| :---        |     :---:       | :---     |
+| AlexNet     | 79.21           | [alexnet_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/alexnet_model_best.pth.tar)| 
+| X-AlexNet   | 78.54           | [xalexnet_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/xalexnet_model_best.pth.tar) | 
+| VGG16       | 90.44           | [vgg16_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/vgg16_model_best.pth.tar) | 
+| X-VGG16     | 90.25           | [vgg16_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/vgg16_model_best.pth.tar) | 
+| ResNet-50   | 92.56           | [fixup_resnet50_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/fixup_resnet50_model_best.pth.tar) | 
+| X-ResNet-50 | 91.12           | [xfixup_resnet50_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/xfixup_resnet50_model_best.pth.tar) | 
 
-You can **download** the pre-trained models from:
+You can download the pre-trained models from:
 
-- AlexNet:
-- VGG16
-- ResNet-50
-- X-AlexNet
-- X-VGG16
-- X-ResNet-50
+- [AlexNet](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/alexnet_model_best.pth.tar)
+- [VGG16](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/vgg16_model_best.pth.tar)
+- [ResNet-50](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/fixup_resnet50_model_best.pth.tar)
+- [X-AlexNet](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/xalexnet_model_best.pth.tar)
+- [X-VGG16](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/xvgg16_model_best.pth.tar)
+- [X-ResNet-50](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/xfixup_resnet50_model_best.pth.tar)
 
 ## Using X-Gradient in Your Own Project
 
