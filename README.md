@@ -4,7 +4,7 @@
 
 This is the official repository accompanying the NeurIPS 2021 paper:
 
-R. Hesse, S. Schaub-Meyer, and S. Roth. **Fast axiomatic attribution for neural networks**. _NeurIPS_, 2021, to appear.
+[R. Hesse](https://robinhesse.github.io/), [S. Schaub-Meyer](https://schaubsi.github.io/), and [S. Roth](https://www.visinf.tu-darmstadt.de/visinf/team_members/sroth/sroth.en.jsp). **Fast axiomatic attribution for neural networks**. _NeurIPS_, 2021, to appear.
 
 [Paper](https://visinf.github.io/fast-axiomatic-attribution/) | [Preprint](https://visinf.github.io/fast-axiomatic-attribution/) | [Project Page](https://visinf.github.io/fast-axiomatic-attribution/) | [Video](https://visinf.github.io/fast-axiomatic-attribution/)
 
