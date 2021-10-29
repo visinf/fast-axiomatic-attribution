@@ -23,7 +23,7 @@ Removing the bias from different image classification models has a surpringly mi
 | AlexNet     | 79.21           | [alexnet_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/models/alexnet_model_best.pth.tar)| 
 | X-AlexNet   | 78.54           | [xalexnet_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/models/xalexnet_model_best.pth.tar) | 
 | VGG16       | 90.44           | [vgg16_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/models/vgg16_model_best.pth.tar) | 
-| X-VGG16     | 90.25           | [vgg16_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/models/vgg16_model_best.pth.tar) | 
+| X-VGG16     | 90.25           | [xvgg16_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/models/xvgg16_model_best.pth.tar) | 
 | ResNet-50   | 92.56           | [fixup_resnet50_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/models/fixup_resnet50_model_best.pth.tar) | 
 | X-ResNet-50 | 91.12           | [xfixup_resnet50_model_best.pth.tar](https://download.visinf.tu-darmstadt.de/data/2021-neurips-fast-axiomatic-attribution/models/xfixup_resnet50_model_best.pth.tar) | 
 
