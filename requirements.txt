@@ -23,7 +23,6 @@ colour=0.1.5=py_0
 cryptography=2.9.2=py37hb09aad4_0
 cudatoolkit=11.0.221=h6bb024c_0
 cycler=0.10.0=py37_0
-cython=0.29.23=pypi_0
 cytoolz=0.11.0=py37h4abf009_1
 dask-core=2021.4.0=pyhd8ed1ab_0
 dbus=1.13.18=hb2f20db_0
@@ -80,7 +79,6 @@ libxgboost=1.3.3=h9c3ff4c_2
 libxml2=2.9.10=hb55368b_3
 llvmlite=0.34.0=py37h269e1b5_4
 locket=0.2.0=py_2
-lvis=0.5.3=pypi_0
 lz4-c=1.9.2=heb0550a_3
 markdown=3.3.3=pyh9f0ad1d_0
 markupsafe=1.1.1=py37hb5d75c8_2
@@ -102,7 +100,6 @@ numpy=1.19.1=py37hbc911f0_0
 numpy-base=1.19.1=py37hfa32c7d_0
 olefile=0.46=py37_0
 open-fonts=0.7.0=1
-opencv-python=4.5.2.54=pypi_0
 openssl=1.1.1k=h7f98852_0
 packaging=20.9=pyh44b312d_0
 pandas=1.0.1=py37hb3f55d8_0
@@ -120,7 +117,6 @@ prompt-toolkit=3.0.17=pyha770c72_0
 protobuf=3.14.0=py37h2531618_1
 ptyprocess=0.7.0=pyhd3deb0d_0
 py-xgboost=1.3.3=py37h89c1867_2
-pycocotools=2.0=pypi_0
 pycparser=2.20=pyh9f0ad1d_2
 pygments=2.8.1=pyhd8ed1ab_0
 pyopenssl=19.1.0=py37_0
@@ -149,7 +145,6 @@ shap=0.37.0=py37h10a2094_0
 sip=4.19.24=py37he6710b0_0
 six=1.15.0=py_0
 slicer=0.0.7=pyhd8ed1ab_0
-slurmpy=0.0.8=pypi_0
 sqlite=3.33.0=h62c20be_0
 tensorboard=1.15.0=py37_0
 tensorboardx=2.4=pyhd8ed1ab_0
