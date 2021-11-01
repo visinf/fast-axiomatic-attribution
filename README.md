@@ -16,7 +16,7 @@ The repository contains:
 
 ## Pretrained Models
 
-Removing the bias from different image classification models has a surpringly minor impact on the accuracy of the models while allowing to efficiently compute axiomatic attributions. Results of popular models with and without bias term (regular vs. X-) on the ImageNet validation split are:
+Removing the bias from different image classification models has a surpringly minor impact on the predictive accuracy of the models while allowing to efficiently compute axiomatic attributions. Results of popular models with and without bias term (regular vs. X-) on the ImageNet validation split are:
 
 | Model       | Top-5 Accuracy  | Download |
 | :---        |     :---:       | :---     |
@@ -61,8 +61,14 @@ optimizer.step()
 The code and a README with detailed instructions on how to reproduce the results from experiments in Sec 4.1, Sec 4.2, and Sec 4.4. of our paper can be found in the [imagenet](imagenet) folder. To reproduce the results from the experiment in Sec 4.3. please refer to the [sparsity](sparsity) folder.
 
 ### Prerequisites
-- Set up conda environment: ```conda create --name <env> --file requirements.txt```
 - Clone the repository: ```git clone https://github.com/visinf/fast-axiomatic-attribution.git```
+- Set up environment
+  - add the required conda channels and create new environment:
+  - ```conda config --add channels pytorch```
+  - ```conda config --add channels anaconda```
+  - ```conda config --add channels pipy```
+  - ```conda config --add channels conda-forge```
+  - ```conda create --name fast-axiomatic-attribution --file requirements.txt```
 - download [ImageNet](https://image-net.org/challenges/LSVRC/2012/) (ILSVRC2012)  
 
 ## Acknowledgment
