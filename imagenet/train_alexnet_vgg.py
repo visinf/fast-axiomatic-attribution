@@ -74,6 +74,9 @@ parser.add_argument('--multiprocessing-distributed', action='store_true',
                          'N processes per node, which has N GPUs. This is the '
                          'fastest way to use PyTorch for either single node or '
                          'multi node data parallel training')
+parser.add_argument('--store_path', default='/data/rhesse/faa_imagenet_models/', type=str, metavar='PATH',
+                    help='path to dict for storing model')
+
 
 best_acc1 = 0
 
@@ -262,7 +265,7 @@ def main_worker(gpu, ngpus_per_node, args):
                 'state_dict': model.state_dict(),
                 'best_acc1': best_acc1,
                 'optimizer' : optimizer.state_dict(),
-            }, is_best, args.arch)
+            }, is_best, args.store_path, args.arch)
 
 
 def train(train_loader, model, criterion, optimizer, epoch, args):
@@ -357,7 +360,7 @@ def validate(val_loader, model, criterion, args):
     return top1.avg
 
 
-def save_checkpoint(state, is_best, arch = 'not_defined', path='/data/rhesse/imagenet_models3', filename='_checkpoint.pth.tar'):
+def save_checkpoint(state, is_best, path, arch = 'not_defined', filename='_checkpoint.pth.tar'):
     torch.save(state, path + arch + filename)
     if is_best:
         shutil.copyfile(path + arch + filename, path + arch + '_model_best.pth.tar')

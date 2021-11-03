@@ -114,6 +114,8 @@ parser.add_argument('--multiprocessing-distributed', action='store_true',
                          'fastest way to use PyTorch for either single node or '
                          'multi node data parallel training')
 parser.add_argument('--alpha', default=0.7, type=float, help='interpolation strength (uniform=1., ERM=0.)')
+parser.add_argument('--store_path', default='/data/rhesse/faa_imagenet_models/', type=str, metavar='PATH',
+                    help='path to dict for storing model')
 
 best_acc1 = 0
 args = parser.parse_args()
@@ -301,7 +303,7 @@ def main_worker(gpu, ngpus_per_node, args):
                 'state_dict': model.state_dict(),
                 'best_acc1': best_acc1,
                 'optimizer' : optimizer.state_dict(),
-            }, is_best)
+            }, is_best, args.store_path, args.arch)
 
 
 def train(train_loader, model, criterion, optimizer, epoch, args):
@@ -400,10 +402,10 @@ def validate(val_loader, model, criterion, args):
     return top1.avg
 
 
-def save_checkpoint(state, is_best, filename=args.arch + '_checkpoint.pth.tar'):
-    torch.save(state, filename)
+def save_checkpoint(state, is_best, path, arch = 'not_defined', filename='_checkpoint.pth.tar'):
+    torch.save(state, path + arch + filename)
     if is_best:
-        shutil.copyfile(filename, args.arch + '_model_best.pth.tar')
+        shutil.copyfile(path + arch + filename, path + arch + '_model_best.pth.tar')
 
 
 class AverageMeter(object):
