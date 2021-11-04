@@ -75,7 +75,6 @@ The code and a README with detailed instructions on how to reproduce the results
 
 We would like to thank the contributors of the following repositories for using parts of their publicly available code:
 - https://github.com/suinleelab/attributionpriors
-- https://github.com/ankurtaly/Integrated-Gradients
 - https://github.com/pytorch/examples/tree/master/imagenet
 - https://github.com/hongyi-zhang/Fixup
 
