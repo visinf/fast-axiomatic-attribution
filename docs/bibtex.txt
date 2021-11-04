@@ -1,1 +1,7 @@
-Coming soon...
+@inproceedings{Hesse:2021:FAA,
+  title     = {Fast Axiomatic Attribution for Neural Networks},
+  author    = {Hesse, Robin and Schaub-Meyer, Simone and Roth, Stefan},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {34},
+  year      = {2021}
+}
