@@ -1,7 +1,5 @@
 ## Reproducing Results from Experiments in Sec 4.1, Sec 4.2, and Sec 4.4. (imagenet)
 
-### Prerequisites
-
 ### Training
 All the default hyperparameters in the code are set to the settings required to reproduce the results of our paper. We use a single NVIDIA A100 SXM4 40 GB GPU for training. To train your own models run the following commands. 
 
