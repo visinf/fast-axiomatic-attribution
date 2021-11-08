@@ -71,7 +71,7 @@ The code and a README with detailed instructions on how to reproduce the results
   - ```conda create --name fast-axiomatic-attribution --file requirements.txt```
 - download [ImageNet](https://image-net.org/challenges/LSVRC/2012/) (ILSVRC2012)  
 
-## Acknowledgment
+## Acknowledgments
 
 We would like to thank the contributors of the following repositories for using parts of their publicly available code:
 - https://github.com/suinleelab/attributionpriors
