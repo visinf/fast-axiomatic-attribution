@@ -43,7 +43,7 @@ Next, you can compute X-Gradient via:
 # compute attribution
 target_outputs = torch.gather(outputs, 1, target.unsqueeze(-1))
 gradients = torch.autograd.grad(torch.unbind(target_outputs), inputs, create_graph=True)[0] # set to false if attribution is only used for evaluation
-xgradient_attributions = gradients * images
+xgradient_attributions = inputs * gradients
 ```
 If the attribution is only used for evaluation you can set `create_graph` to `False`. If you want to use the attribution for training, e.g., for training with attribution priors, you can define `attribution_prior()` and update the weights of your model:
 ```python
