@@ -6,7 +6,7 @@ This is the official repository accompanying the NeurIPS 2021 paper:
 
 [R. Hesse](https://robinhesse.github.io/), [S. Schaub-Meyer](https://schaubsi.github.io/), and [S. Roth](https://www.visinf.tu-darmstadt.de/visinf/team_members/sroth/sroth.en.jsp). **Fast axiomatic attribution for neural networks**. _NeurIPS_, 2021, to appear.
 
-[Paper](https://visinf.github.io/fast-axiomatic-attribution/) | [Preprint (arXiv)](https://arxiv.org/abs/2111.07668) | [Project Page](https://visinf.github.io/fast-axiomatic-attribution/) | [Video](https://www.youtube.com/watch?v=AHkeeyoNGp8)
+[Paper](https://papers.nips.cc/paper/2021/file/a284df1155ec3e67286080500df36a9a-Paper.pdf) | [Preprint (arXiv)](https://arxiv.org/abs/2111.07668) | [Project Page](https://visinf.github.io/fast-axiomatic-attribution/) | [Video](https://www.youtube.com/watch?v=AHkeeyoNGp8)
 
 The repository contains:
 - Pre-trained <img src="https://render.githubusercontent.com/render/math?math=\mathcal{X}">-DNN (X-DNN) variants of popular image classification models obtained by removing the bias term of each layer
